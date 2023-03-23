@@ -1,7 +1,7 @@
 /**
  * 
  */
-package kottarath.assign3.topquiz.data;
+package piyushaman.oadproject.topquiz.data;
 
 /**
  * Question type enum

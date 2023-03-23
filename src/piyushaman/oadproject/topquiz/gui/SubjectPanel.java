@@ -1,21 +1,17 @@
 /**
  * 
  */
-package kottarath.assign3.topquiz.gui;
+package piyushaman.oadproject.topquiz.gui;
 
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
-import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.ButtonGroup;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -60,21 +56,21 @@ public class SubjectPanel extends JPanel {
 		
 		
 		rdoGeography=new JRadioButton("Geography");
-		rdoGeography.setForeground(new Color(0, 0, 128));
-		rdoGeography.setFont(new Font("Century Schoolbook", Font.BOLD, 18));
+		rdoGeography.setForeground(new Color(13, 13, 13));
+		rdoGeography.setFont(new Font("Sans Serif", Font.BOLD, 18));
 		rdoGeography.setActionCommand("Geography");
 		rdoGeography.addActionListener(rdoBtnEventHandler);
 		
 		rdoScience = new JRadioButton("Science");
-		rdoScience.setForeground(new Color(0, 0, 128));
-		rdoScience.setFont(new Font("Century Schoolbook", Font.BOLD, 18));
+		rdoScience.setForeground(new Color(13, 13, 13));
+		rdoScience.setFont(new Font("Sans Serif", Font.BOLD, 18));
 		
 		rdoScience.setActionCommand("Science");
 		rdoScience.addActionListener(rdoBtnEventHandler);
 		
 		rdoEntertainment=new JRadioButton("Entertainment");
-		rdoEntertainment.setForeground(new Color(0, 0, 128));
-		rdoEntertainment.setFont(new Font("Century Schoolbook", Font.BOLD, 18));
+		rdoEntertainment.setForeground(new Color(13, 13, 13));
+		rdoEntertainment.setFont(new Font("Sans Serif", Font.BOLD, 18));
 		rdoEntertainment.setActionCommand("Entertainment");
 		rdoEntertainment.addActionListener(rdoBtnEventHandler);
 		
@@ -85,7 +81,7 @@ public class SubjectPanel extends JPanel {
 		
 		//prompt for topic selection
 		JLabel lblWelcome=new JLabel("<html>Choose a Topic<br/></html>",SwingConstants.LEFT);
-		lblWelcome.setFont(new Font("Century Schoolbook", Font.BOLD, 20));
+		lblWelcome.setFont(new Font("Sans Serif", Font.BOLD, 20));
 		
 		
 		//add controls to panel

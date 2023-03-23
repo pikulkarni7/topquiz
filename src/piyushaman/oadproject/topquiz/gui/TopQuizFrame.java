@@ -1,29 +1,24 @@
 /**
  * 
  */
-package kottarath.assign3.topquiz.gui;
+package piyushaman.oadproject.topquiz.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
 import java.awt.Dimension;
-import java.awt.Font;
 import java.awt.GridLayout;
-import java.awt.SystemColor;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.Image;
 
-import javax.swing.BorderFactory;
-import javax.swing.BoxLayout;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
 import javax.swing.SwingConstants;
 
 
@@ -128,7 +123,9 @@ public class TopQuizFrame extends JFrame {
 		btnStart=new JButton();
 		btnStart.setBorderPainted(false);
 		btnStart.setContentAreaFilled(false);
-		btnStart.setIcon(new ImageIcon("./Resources/LayoutImages/startbutton.png"));
+		ImageIcon icon = new ImageIcon("./Resources/LayoutImages/startbutton.png");
+		Image image = icon.getImage().getScaledInstance(100, 100, Image.SCALE_SMOOTH);
+		btnStart.setIcon(new ImageIcon(image));
 		btnStart.setToolTipText("Start Playing");
 		btnStart.setPreferredSize(new Dimension(100, 100));
 		startPane.add(btnStart,Component.CENTER_ALIGNMENT);

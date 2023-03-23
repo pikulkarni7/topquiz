@@ -1,7 +1,7 @@
 /**
  * 
  */
-package kottarath.assign3.topquiz.data;
+package piyushaman.oadproject.topquiz.data;
 
 import java.util.ArrayList;
 import java.util.Random;

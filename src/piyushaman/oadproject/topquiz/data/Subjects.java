@@ -1,7 +1,7 @@
 /**
  * Data files
  */
-package kottarath.assign3.topquiz.data;
+package piyushaman.oadproject.topquiz.data;
 
 /**
  * Enum for various topics

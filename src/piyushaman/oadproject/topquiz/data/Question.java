@@ -1,10 +1,9 @@
 /**
  * 
  */
-package kottarath.assign3.topquiz.data;
+package piyushaman.oadproject.topquiz.data;
 
 import java.util.List;
-import java.util.ArrayList;
 
 /**
  * Class to store Question details

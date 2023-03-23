@@ -1,19 +1,17 @@
 /**
  * 
  */
-package kottarath.assign3.topquiz.gui;
+package piyushaman.oadproject.topquiz.gui;
 
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Font;
-import java.awt.Frame;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.ButtonGroup;
 import javax.swing.ImageIcon;
@@ -28,13 +26,13 @@ import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 
-import kottarath.assign3.topquiz.data.EntertainmentBank;
-import kottarath.assign3.topquiz.data.GeographyBank;
-import kottarath.assign3.topquiz.data.Question;
-import kottarath.assign3.topquiz.data.QuestionBank;
-import kottarath.assign3.topquiz.data.QuestionType;
-import kottarath.assign3.topquiz.data.ScienceBank;
-import kottarath.assign3.topquiz.data.Subjects;
+import piyushaman.oadproject.topquiz.data.EntertainmentBank;
+import piyushaman.oadproject.topquiz.data.GeographyBank;
+import piyushaman.oadproject.topquiz.data.Question;
+import piyushaman.oadproject.topquiz.data.QuestionBank;
+import piyushaman.oadproject.topquiz.data.QuestionType;
+import piyushaman.oadproject.topquiz.data.ScienceBank;
+import piyushaman.oadproject.topquiz.data.Subjects;
 
 /**
  * Panel to display questions and answers
@@ -105,7 +103,7 @@ public class QuestionPanel extends JPanel {
 		
 		initValues();
 		
-		setPreferredSize(new Dimension(800, 700));
+		setPreferredSize(new Dimension(1000, 1200));
 		
 		//get question bank for the selected topic
 		//setQuestionBank(quizSubject);
@@ -122,7 +120,7 @@ public class QuestionPanel extends JPanel {
 		//timerPane.setBorder(BorderFactory.createLineBorder(Color.RED));
 		
 		lblTimeProgress=new JLabel();
-		lblTimeProgress.setFont(new Font("Century Schoolbook", Font.BOLD, 35));
+		lblTimeProgress.setFont(new Font("Sans Serif", Font.BOLD, 35));
 		lblTimeProgress.setAlignmentX(CENTER_ALIGNMENT);
 		setTimerLabel(10);
 		timerPane.add(lblTimeProgress);
@@ -184,15 +182,15 @@ public class QuestionPanel extends JPanel {
 		//populate data to controls
 		JPanel numPane=new JPanel();
 		lblNum=new JLabel("<html>Question "+(attempted)+" of 10<br/><br/></html>");
-		lblNum.setFont(new Font("Century Schoolbook", Font.BOLD, 20));
+		lblNum.setFont(new Font("Sans Serif", Font.BOLD, 20));
 		numPane.add(lblNum,JComponent.LEFT_ALIGNMENT);
 		
 		JPanel qTextPane=new JPanel();
-		qTextPane.setAlignmentX(Component.CENTER_ALIGNMENT);
+		qTextPane.setAlignmentX(Component.LEFT_ALIGNMENT);
 		lblQuestion=new JTextArea();
 		lblQuestion.setLineWrap(true);
 		lblQuestion.setWrapStyleWord(true);
-		lblQuestion.setFont(new Font("Century Schoolbook", Font.BOLD, 15));
+		lblQuestion.setFont(new Font("Sans Serif", Font.BOLD, 15));
 		lblQuestion.setText(newQuestion.getQuestionText());//question
 		lblQuestion.setEditable(false);
 		lblQuestion.setOpaque(false);
@@ -224,7 +222,7 @@ public class QuestionPanel extends JPanel {
 		JPanel optionPane=new JPanel();
 		optionPane.setLayout(new BoxLayout(optionPane, BoxLayout.Y_AXIS));
 		
-		optionPane.setAlignmentX(Component.CENTER_ALIGNMENT);
+		optionPane.setAlignmentX(Component.LEFT_ALIGNMENT);
 		for(String option :newQuestion.getOptions())
 		{
 			JRadioButton newOption=new JRadioButton(option);
@@ -249,16 +247,17 @@ public class QuestionPanel extends JPanel {
 	private void createButtons()
 	{
 		buttonPane=new JPanel();
-		buttonPane.setLayout(new BoxLayout(buttonPane, BoxLayout.Y_AXIS));
+		buttonPane.setLayout(new BoxLayout(buttonPane, BoxLayout.X_AXIS));
+
 		
 		//button to submit answer
 		ImageIcon submitIcon=new ImageIcon(LAYOUTIMAGEPATH+"SubmitBlueButton.png");
 		btnSubmit=new JButton("Submit");
 		
-		btnSubmit.setForeground(new Color(255, 255, 255));
+		btnSubmit.setForeground(new Color(254, 249, 248));
 		btnSubmit.setOpaque(true);
-		btnSubmit.setFont(new Font("Century Schoolbook", Font.BOLD, 20));
-		btnSubmit.setBackground(new Color(0, 0, 128));
+		btnSubmit.setFont(new Font("Sans Serif", Font.BOLD, 20));
+		btnSubmit.setBackground(new Color(13, 13, 13));
 		
 		btnSubmit.setToolTipText("Submit");
 		/**
@@ -326,10 +325,10 @@ public class QuestionPanel extends JPanel {
 		//button to go to next question
 		btnNext=new JButton("Next");
 		
-		btnNext.setForeground(new Color(255, 255, 255));
+		btnNext.setForeground(new Color(254, 249, 248, 255));
 		btnNext.setOpaque(true);
-		btnNext.setFont(new Font("Century Schoolbook", Font.BOLD, 20));
-		btnNext.setBackground(new Color(0, 0, 128));
+		btnNext.setFont(new Font("Sans Serif", Font.BOLD, 20));
+		btnNext.setBackground(new Color(13, 13, 13));
 		
 		btnNext.setVisible(false);
 		/**
@@ -403,14 +402,15 @@ public class QuestionPanel extends JPanel {
 		
 		
 		JPanel endButtonPane=new JPanel();
-		endButtonPane.setLayout(new BoxLayout(endButtonPane,BoxLayout.X_AXIS));
+		endButtonPane.setLayout(new BoxLayout(endButtonPane, BoxLayout.Y_AXIS));
+
 		
 		btnEnd=new JButton("End Quiz");
 		
-		btnEnd.setForeground(new Color(255, 255, 255));
+		btnEnd.setForeground(new Color(254, 249, 248));
 		btnEnd.setOpaque(true);
-		btnEnd.setFont(new Font("Century Schoolbook", Font.BOLD, 20));
-		btnEnd.setBackground(new Color(0, 0, 128));
+		btnEnd.setFont(new Font("Sans Serif", Font.BOLD, 20));
+		btnEnd.setBackground(new Color(255, 0, 0));
 		
 		/**
 		 * End button click event
@@ -434,8 +434,8 @@ public class QuestionPanel extends JPanel {
 		});
 		endButtonPane.add(btnEnd);
 		
-		add(buttonPane,JComponent.CENTER_ALIGNMENT);
-		add(endButtonPane,JComponent.RIGHT_ALIGNMENT);
+		add(buttonPane,JComponent.RIGHT_ALIGNMENT);
+		add(endButtonPane,JComponent.CENTER_ALIGNMENT);
 		
 		
 		
@@ -509,8 +509,8 @@ public class QuestionPanel extends JPanel {
 	 */
 	private void setTimerLabel(int remaining)
 	{
-		lblTimeProgress.setForeground(new Color(46, 139, 87));
-		lblTimeProgress.setFont(new Font("Century Schoolbook", Font.BOLD, 35));
+		lblTimeProgress.setForeground(new Color(48, 49, 121));
+		lblTimeProgress.setFont(new Font("Sans Serif", Font.BOLD, 35));
 		lblTimeProgress.setText(String.valueOf(remaining));
 	}
 	
@@ -540,7 +540,7 @@ public class QuestionPanel extends JPanel {
            {
         	   stopAnimation();
         	   lblTimeProgress.setText("Time out!");//Show time out message
-        	   lblTimeProgress.setFont(new Font("Century Schoolbook", Font.BOLD, 50));
+        	   lblTimeProgress.setFont(new Font("Sans Serif", Font.BOLD, 50));
         	   
         	   isSubmitted=true;//when time out - similar to wrong answer submitted case.
         	   btnSubmit.setVisible(false);//hide submit button when time out.

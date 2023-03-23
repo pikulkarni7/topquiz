@@ -1,7 +1,7 @@
 /**
  * 
  */
-package kottarath.assign3.topquiz.gui;
+package piyushaman.oadproject.topquiz.gui;
 
 /**
  * facilitate communication between subject panel and question panel

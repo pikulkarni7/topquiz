@@ -1,7 +1,7 @@
 /**
  * GUI files
  */
-package kottarath.assign3.topquiz.gui;
+package piyushaman.oadproject.topquiz.gui;
 
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
@@ -9,7 +9,7 @@ import javax.swing.UIManager;
 /**
  * Main Thread
  * @author Priya
- * 
+ *
  */
 public class Main {
 
@@ -19,9 +19,9 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		//runs the application as the event dispatch thread
-		
+
 		SwingUtilities.invokeLater(new Runnable() {
-			
+
 			@Override
 			public void run() {
 				try {//look and feel made cross platform
@@ -29,7 +29,7 @@ public class Main {
 				 } catch (Exception e) {
 				            e.printStackTrace();
 				 }
-				
+
 				new TopQuizFrame();//call the main frame
 			}
 		});

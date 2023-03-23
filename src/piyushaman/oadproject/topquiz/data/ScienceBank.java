@@ -1,7 +1,7 @@
 /**
  * 
  */
-package kottarath.assign3.topquiz.data;
+package piyushaman.oadproject.topquiz.data;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -29,7 +29,7 @@ public class ScienceBank extends QuestionBank {
 	/**
 	 * Get a random unique question from this question bank
 	 * @author Priya
-	 * @see kottarath.assign3.topquiz.data.QuestionBank#getRandomQuestion()
+	 * @see QuestionBank#getRandomQuestion()
 	 */
 	@Override
 	public Question getRandomQuestion() {

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package kottarath.assign3.topquiz.gui;
+package piyushaman.oadproject.topquiz.gui;
 
 import java.util.HashMap;
 import java.util.Map;
