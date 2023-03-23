@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  * Abstract class to store all questions
- * @author Priya
+ * @author Aman
  *
  */
 public abstract class QuestionBank {
@@ -72,7 +72,7 @@ public abstract class QuestionBank {
 	/**
 	 * Load questions from file
 	 * @param fileName
-	 * @author Priya
+	 * @author Aman
 	 */
 	public void getAllQuestions(String fileName)
 	{
@@ -164,7 +164,7 @@ public abstract class QuestionBank {
 	/**
 	 * Return a unique random question
 	 * @return Question
-	 * @author Priya
+	 * @author Aman
 	 */
 	public abstract Question getRandomQuestion();
 		
@@ -172,7 +172,7 @@ public abstract class QuestionBank {
 	/**
 	 * Calculates score percentage for each topic
 	 * @return double
-	 * @author Priya
+	 * @author Piyush
 	 */
 	public double getPercentageScore()
 	{
@@ -191,7 +191,7 @@ public abstract class QuestionBank {
 	 * Get question type
 	 * @param questionType string
 	 * @return QuestionType enum
-	 * @author Priya
+	 * @author Piyush
 	 */
 	private QuestionType getQuestionType(String questionType)
 	{

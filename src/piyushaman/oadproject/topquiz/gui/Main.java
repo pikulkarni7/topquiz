@@ -8,7 +8,7 @@ import javax.swing.UIManager;
 
 /**
  * Main Thread
- * @author Priya
+ * @author Piyush
  *
  */
 public class Main {

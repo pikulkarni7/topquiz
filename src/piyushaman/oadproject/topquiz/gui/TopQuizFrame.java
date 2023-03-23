@@ -25,7 +25,7 @@ import javax.swing.SwingConstants;
 
 /**
  * Main frame for Top Quiz application
- * @author Priya
+ * @author Piyush
  * 
  */
 public class TopQuizFrame extends JFrame {

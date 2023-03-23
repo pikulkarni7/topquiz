@@ -5,7 +5,7 @@ package piyushaman.oadproject.topquiz.data;
 
 /**
  * Enum for various topics
- * @author Priya
+ * @author Piyush
  *
  */
 public enum Subjects {

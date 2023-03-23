@@ -23,7 +23,7 @@ import java.awt.Rectangle;
 
 /**
  * Title panel in frame
- * @author Priya
+ * @author Piyush
  * 
  */
 public class HeaderPanel extends JPanel {

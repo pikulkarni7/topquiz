@@ -9,7 +9,8 @@ import java.util.Random;
 /**
  * Class for Entertainment topic
  * Extends QuestionBank
- * @author Priya
+ * @author Piyush
+ *
  * 
  */
 public class EntertainmentBank extends QuestionBank{

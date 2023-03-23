@@ -8,7 +8,7 @@ import java.util.Map;
 
 /**
  * Model class to store score details
- * @author Priya
+ * @author Piyush
  * 
  */
 public class ScoreSummary {

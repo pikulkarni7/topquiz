@@ -36,7 +36,7 @@ import piyushaman.oadproject.topquiz.data.Subjects;
 
 /**
  * Panel to display questions and answers
- * @author Priya
+ * @author Aman
  * 
  *
  */
@@ -190,7 +190,7 @@ public class QuestionPanel extends JPanel {
 		lblQuestion=new JTextArea();
 		lblQuestion.setLineWrap(true);
 		lblQuestion.setWrapStyleWord(true);
-		lblQuestion.setFont(new Font("Sans Serif", Font.BOLD, 15));
+		lblQuestion.setFont(new Font("Sans Serif", Font.BOLD, 20));
 		lblQuestion.setText(newQuestion.getQuestionText());//question
 		lblQuestion.setEditable(false);
 		lblQuestion.setOpaque(false);
@@ -226,6 +226,7 @@ public class QuestionPanel extends JPanel {
 		for(String option :newQuestion.getOptions())
 		{
 			JRadioButton newOption=new JRadioButton(option);
+			newOption.setFont(new Font("Sans Serif", Font.PLAIN, 18));
 			newOption.setActionCommand(option);//to check answer on submission
 			newOption.addActionListener(radioBtnEventHandler);
 			optionGroup.add(newOption);//add to button group
@@ -303,7 +304,7 @@ public class QuestionPanel extends JPanel {
 					if(attempted==10)
 					{
 						//attempted--;
-						JOptionPane.showMessageDialog(null, "Woohoo.. You just finished a quiz. Let's see the scores now.","Quiz completed",JOptionPane.INFORMATION_MESSAGE);
+						JOptionPane.showMessageDialog(null, "QUIZ COMPLETED!","Quiz completed",JOptionPane.INFORMATION_MESSAGE);
 						//show summary pane
 						endQuiz();
 					}
@@ -344,7 +345,7 @@ public class QuestionPanel extends JPanel {
 				if(attempted==10)
 				{
 					
-					JOptionPane.showMessageDialog(null, "Woohoo.. You just finished a quiz. Let's see the scores now.","Quiz completed",JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, "QUIZ COMPLETED!","Quiz completed",JOptionPane.INFORMATION_MESSAGE);
 					//show summary pane
 					endQuiz();
 				}
@@ -397,8 +398,7 @@ public class QuestionPanel extends JPanel {
 		});
 		
 		
-		buttonPane.add(btnSubmit);
-		buttonPane.add(btnNext);
+
 		
 		
 		JPanel endButtonPane=new JPanel();
@@ -424,18 +424,21 @@ public class QuestionPanel extends JPanel {
 					endQuiz();
 				else
 				{
-					JOptionPane.showMessageDialog(null, "Please submit an answer for this question before you end quiz.",
-							"Top Quiz - Alert",
+					JOptionPane.showMessageDialog(null, "Please submit an answer for this question before you end the quiz.",
+							"Alert",
 							JOptionPane.ERROR_MESSAGE);
 					
 				}
 				
 			}
 		});
-		endButtonPane.add(btnEnd);
+		endButtonPane.add(btnSubmit);
+		endButtonPane.add(btnNext);
+		buttonPane.add(btnEnd);
+
 		
-		add(buttonPane,JComponent.RIGHT_ALIGNMENT);
-		add(endButtonPane,JComponent.CENTER_ALIGNMENT);
+		add(buttonPane,JComponent.LEFT_ALIGNMENT);
+		add(endButtonPane,JComponent.RIGHT_ALIGNMENT);
 		
 		
 		
@@ -443,7 +446,7 @@ public class QuestionPanel extends JPanel {
 	
 	/**
 	 * Implements ActionListener for RadioButtons.
-	 * @author Priya
+	 * @author Aman
 	 *
 	 */
 	class RadioButtonEventHandler implements ActionListener

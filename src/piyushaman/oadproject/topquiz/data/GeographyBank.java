@@ -8,7 +8,7 @@ import java.util.Random;
 
 /**Class for Geography topic
  *Extends QuestionBank
- * @author Priya
+ * @author Piyush
  *
  */
 public class GeographyBank extends QuestionBank{

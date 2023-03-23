@@ -15,7 +15,7 @@ import javax.swing.SwingConstants;
 
 /**
  * Panel to display quiz after topic selection from welcome screen
- * @author Priya
+ * @author Aman
  *
  */
 public class QuizPanel extends JPanel {

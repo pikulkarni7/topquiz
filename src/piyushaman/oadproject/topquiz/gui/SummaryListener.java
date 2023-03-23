@@ -5,7 +5,7 @@ package piyushaman.oadproject.topquiz.gui;
 
 /**
  * Facilitate communication between question panel and summary panel
- * @author Priya
+ * @author Aman
  * 
  */
 public interface SummaryListener {

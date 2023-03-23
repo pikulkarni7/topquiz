@@ -9,7 +9,7 @@ import java.util.Random;
 /**
  * Class for Science topic
  * Extends QuestionBank
- * @author Priya
+ * @author Aman
  * 
  */
 public class ScienceBank extends QuestionBank {
@@ -28,7 +28,7 @@ public class ScienceBank extends QuestionBank {
 	
 	/**
 	 * Get a random unique question from this question bank
-	 * @author Priya
+	 * @author Piyush
 	 * @see QuestionBank#getRandomQuestion()
 	 */
 	@Override

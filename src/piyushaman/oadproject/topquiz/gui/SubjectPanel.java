@@ -22,7 +22,7 @@ import java.awt.Font;
 /**
  * Topic selection panel
  * 
- * @author Priya
+ * @author Piyush
  * 
  */
 public class SubjectPanel extends JPanel {
@@ -129,7 +129,7 @@ public class SubjectPanel extends JPanel {
 	
 	/**
 	 * Event handler for topic radio buttons
-	 * @author Priya
+	 * @author Piyush
 	 *
 	 */
 	 class RadioButtonEventHandler implements ActionListener

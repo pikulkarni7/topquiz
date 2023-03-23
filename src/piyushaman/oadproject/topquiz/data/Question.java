@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * Class to store Question details
- * @author Priya
+ * @author Aman
  *
  */
 public class Question {

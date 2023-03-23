@@ -5,7 +5,7 @@ package piyushaman.oadproject.topquiz.data;
 
 /**
  * Question type enum
- * @author Priya
+ * @author Aman
  *
  */
 public enum QuestionType {
