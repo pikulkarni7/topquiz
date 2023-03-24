@@ -77,7 +77,7 @@ public class SummaryPanel extends JPanel {
 		if (summary.getTotalScore() == 0) {
 			lblInfo.setText("<html>Your score is too low.<br/>Better luck next time!</html>");
 			lblInfo.setForeground(new Color(255, 255, 255));
-		} 
+		}
 
 		// create score pane
 

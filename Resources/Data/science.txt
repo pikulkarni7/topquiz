@@ -1,11 +1,14 @@
-<MC>Brass gets discolored in air because of the presence of which of the following gases in air?<O> Oxygen:Hydrogen sulphide:Carbon dioxide:Nitrogen</O><A>Hydrogen sulphide</A>
-<MC>Which of the following is a non metal that remains liquid at room temperature<O>Phosphorous:Bromine:Chlorine:Helium</O><A>Bromine</A>
-<MC>Chlorophyll is a naturally occurring chelate compound in which central metal is<O>copper:magnesium:iron:calcium</O><A>magnesium</A>
-<MC>Which of the following is used in pencils?<O>Graphite:Silicon:Charcoal:Phosphorous</O><A>Graphite</A>
-<MC>Which of the following metals forms an amalgam with other metals?<O>Tin:Mercury:Lead:Zinc</O><A>Mercury</A>
-<MC>The gas usually filled in the electric bulb is<O>Nitrogen:Hydrogen:Carbon Dioxide:Oxygen</O><A>Nitrogen</A>
+<MC>What is the smallest planet in our solar system?<O>Mercury:Venus:Earth:Mars</O><A>Mercury</A>
+<MC>What is the largest organ in the human body?<O>Liver:Heart:Skin:Lungs</O><A>Skin</A>
+<MC>What is the unit of electric current?<O>Watt:Volt:Ampere:Ohm</O><A>Ampere</A>
+<MC>What is the chemical symbol for gold?<O>Ag:Au:Cu:Fe</O><A>Au</A>
+<MC>What is the main component of natural gas?<O>Methane:Carbon dioxide:Oxygen:Nitrogen</O><A>Methane</A>
+<QI>Who is the author of the Harry Potter book series?<F>Literature_Q6.jpg</F><O>J.K. Rowling:Stephenie Meyer:Dan Brown:George R.R. Martin</O><A>J.K. Rowling</A>
+<QI>What is the highest mountain in the world?<F>Geography_Q5.jpg</F><O>Mount Everest:Mount Kilimanjaro:Mount Fuji:Mount Aconcagua</O><A>Mount Everest</A>
+<QI>What is the smallest country in the world?<F>Geography_Q8.jpg</F><O>Vatican City:Monaco:Maldives:San Marino</O><A>Vatican City</A>
+<QI>Who painted the Mona Lisa?<F>Art_Q2.jpg</F><O>Leonardo da Vinci:Michelangelo:Raphael:Vincent van Gogh</O><A>Leonardo da Vinci</A>
+<MC>What is the currency of Japan?<O>Yuan:Rupee:Yen:Pound</O><A>Yen</A>
 <QI>Identify this Chemist who formulated the periodic table<F>Science_Q7.jpeg</F><O>Glenn Seaborg:Horace Deming:Dmitri Mendeleev:Alexander Borodin</O><A>Dmitri Mendeleev</A>
 <QI>Identify this Scottish scientist who discovered Penicillin<F>Science_Q8.jpg</F><O>Alexander Fleming:Andrew Flintoff:Charles Thom:Howard Florey</O><A>Alexander Fleming</A>
 <QI>Recognize this legendary Astronaut <F>Science_Q9.jpeg</F><O>Yuri Gagarin:John Glenn:Scott Kelly:Neil Armstrong</O><A>Neil Armstrong</A>
 <QI>Who is this modern visionary?<F>Science_Q10.jpeg</F><O>Larry Ellison:Jeff Bezos:Elon Musk:Steve Jobs</O><A>Elon Musk</A>
-<MC>Which of the gas is not known as green house gas?<O>Methane:Nitrous oxide:Carbon dioxide:Hydrogen</O><A>Hydrogen</A>
